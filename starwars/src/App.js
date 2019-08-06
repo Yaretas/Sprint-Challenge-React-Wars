@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
 import axios from "axios";
-import starWarsCard from "./components/starWarsCard";
+import StarWarsCard from "./components/starWarsCard";
 
 
 
@@ -21,7 +21,7 @@ useEffect(()=>{
       // set keys
       setPeople(starWarsData);
       console.log(setPeople);
-      console.log(starWarsCard);
+      // console.log(starWarsCard);
     
     })
     .catch(Err =>{
@@ -39,7 +39,7 @@ useEffect(()=>{
 
         {people.map((character, i) =>{
           return (
-            <character key={i} img={character.url} name={character.name} birthyear={character.birthyear} age={character.age} gender={character.gender} created={character.creacted}/>
+            <StarWarsCard key={i} img={character.url} name={character.name} birthyear={character.birthyear} age={character.age} gender={character.gender} created={character.creacted}/>
           )
         })};
 

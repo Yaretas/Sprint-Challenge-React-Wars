@@ -27,12 +27,14 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
 - [ ] What does it mean to _think_ in react?
+- As the name states React is a Js library that Reacts when the state of the DOM changes. Think in React is thinking of how to build a project reusable components.
 
 - [ ] Describe state.
-
+- it is a Jv Object that represent visual parts of the apps that can change. This can means the visual representation of the app on the screen.
 - [ ] Describe props.
-
+- it is short for properties and we used it when we want to pass information healed on State to one component to another. 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+- is anything in outside a function that is affecting something is called a side effect. like fetching data from a API , We can Sync effects by passing a dependency array to a second argument. 
 
 ## Project Set Up
 
