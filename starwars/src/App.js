@@ -39,7 +39,7 @@ useEffect(()=>{
 
         {people.map((character, i) =>{
           return (
-            <StarWarsCard key={i} img={character.url} name={character.name} birthyear={character.birthyear} age={character.age} gender={character.gender} created={character.creacted}/>
+            <StarWarsCard key={i}  name={character.name} height={character.height} birth_year={character.birth_year} age={character.age} gender={character.gender} created={character.created}/>
           )
         })};
 
