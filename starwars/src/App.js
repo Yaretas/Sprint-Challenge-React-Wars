@@ -28,7 +28,7 @@ useEffect(()=>{
       console.log(Err);
     })
 
-},[])
+},[]);
   // Fetch characters from the star wars api in an effect hook. Remember, anytime you have a 
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
@@ -36,12 +36,14 @@ useEffect(()=>{
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      
-      {people.map(character =>{
-        return (
-      
-        )
-      })}
+
+        {people.map((character, i) =>{
+          return (
+            <character key={i} img={character.url} name={character.name} birthyear={character.birthyear} age={character.age} gender={character.gender} created={character.creacted}/>
+          )
+        })};
+
+
     </div>
   );
 }
